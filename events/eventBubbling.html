@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+            body *{
+                margin: 10px;
+                border: 1px solid red;
+            }
+        </style>
+
+    </head>
+    <body>
+        <form id="form">Form
+            <div id="div">Div
+                <p id="p">P</p>
+            </div>
+        </form>
+        <script>
+            document.getElementById("form").addEventListener("click",function(){
+                alert("Form is called")
+            })
+            document.getElementById("div").addEventListener("click",function(){
+                alert("Div is called");
+                event.stopPropagation();
+            })
+            document.getElementById("p").addEventListener("click",function(){
+                alert("P1 is called");
+                // event.stopPropagation();
+                event.stopImmediatePropagation();
+            })
+            document.getElementById("p").addEventListener("click",function(){
+                alert("P2 is called");
+                // event.stopPropagation();
+            })
+            document.getElementById("p").addEventListener("click",function(){
+                alert("P3 is called");
+                // event.stopPropagation();
+            })
+        </script>
+    </body>
+</html>
