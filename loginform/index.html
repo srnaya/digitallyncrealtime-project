@@ -1,0 +1,20 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            Emaiid:<input type="text" id="emailid" placeholder="Enter username">
+            Password:<input type="password" id="password" placeholder="Enter password">
+            <button onclick="login()">login</button>
+        </form>
+        <script>
+            function login(){
+                event.preventDefault();
+                console.log(document.getElementById("emailid").value);
+                console.log(document.getElementById("password").value);
+
+            }
+        </script>
+    </body>
+</html>

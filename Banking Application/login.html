@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>WELCOME TO BANKING SYSTEM</h1>
+        UserId:<input type="text" id="userId" placeholder="Enter userid">
+        Password:<input type="text" id="password" placeholder="Enter password">
+        
+        <button onclick="login()">Login</button>
+        
+        <script>
+            function login(){
+                var userId;
+                var password;
+                userId=document.getElementById("userId").value;
+                password=document.getElementById("password").value;
+                console.log(userId);
+                console.log(password);
+                if(userId=="soumya" && password=="1234"){
+                    window.location.href="http://127.0.0.1:5500/Banking%20Application/pagedetails.html"
+                }else{
+                    alert("Put userid and password");
+                }
+            }
+        </script>
+    </body>
+</html>

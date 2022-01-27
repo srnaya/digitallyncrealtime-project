@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Soumyaranjan Nayak</h1>
+        <h2>Total Balance:<span id="totalBalance">00</span></h2>
+        
+        Deposite:<input type="number" id="depositeAmount">
+        <button id="addAmount">Add</button>
+        <script>
+            var addAmount=document.getElementById("addAmount");
+            addAmount.addEventListener("click",function(){
+                 var depositeAmount=document.getElementById("depositeAmount").value;
+                 var depositeNewAmount=parseFloat(depositeAmount);
+                 var totalBalance=document.getElementById("totalBalance").innerHTML;
+                 var totalNewBalance=parseFloat(totalBalance);
+                 var totalDeposite=totalNewBalance+depositeNewAmount;
+                 document.getElementById("totalBalance").innerHTML=totalDeposite;
+                 console.log(totalDeposite);
+                //  console.log(depositeAmount);
+                
+                // console.log(depositeAmount);
+            })
+
+        </script>
+    </body>
+</html>

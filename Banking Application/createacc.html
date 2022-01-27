@@ -1,0 +1,38 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        UserId:<input type="text" id="userId" placeholder="user id"><br><br>
+        First Name:<input type="text" id="firstName" placeholder="Enter your name"><br><br>
+        Last Name:<input type="text" id="lastName" placeholder="Enter your lastname"><br><br>
+        MailId:<input type="mailid" id="mailId" placeholder="Enter your mailid"><br><br>
+        Password:<input type="password" id="password" placeholder="Enter password"><br><br>
+        Confirm Password:<input type="password" id="confirmPassword" placeholder="Confirm your password"><br><br>
+        <button onclick="create()">Create</button>
+        <script>
+            var customers=[];
+            function create(){
+                var userId=document.getElementById("userId").value;
+                var firstName=document.getElementById("firstName").value;
+                var lastName=document.getElementById("lastName").value;
+                var mailId=document.getElementById("mailId").value;
+                var password=document.getElementById("password").value;
+                var confirmPassword=document.getElementById("confirmPassword").value;
+                // console.log(userId);
+                // console.log(firstName);
+                // console.log(lastName);
+                // console.log(mailId);
+                // console.log(password);
+                // console.log(confirmPassword);
+                customers.push("userid"+":"+userId);
+                customers.push("firstname"+":" +firstName);
+                customers.push("Lastname"+ ":" +lastName);
+                customers.push("MailId"+ ":"  +mailId);
+                customers.push("Password"+ ":" +password);
+                customers.push("ConfirmPassword"+ ":" +confirmPassword);
+                console.log(customers);
+            }
+        </script>
+    </body>
+</html>
