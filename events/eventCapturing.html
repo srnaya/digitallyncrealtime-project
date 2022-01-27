@@ -1,0 +1,28 @@
+<html>
+    <head>
+      <style>
+          body *{
+              margin: 10px;
+              border: 1px solid red;
+          }
+      </style>
+    </head>
+    <body>
+        <form id="form">Form
+            <div id="div">Div
+                <p id="p">P</p>
+            </div>
+        </form>
+        <script>
+            document.getElementById("form").addEventListener("click",function(){
+                alert("form is called");
+            },{capture:true});
+            document.getElementById("div").addEventListener("click",function(){
+                alert("div is called");
+            },{capture:true});
+            document.getElementById("p").addEventListener("click",function(){
+                alert("p is called");
+            },{capture:true});
+        </script>
+    </body>
+</html>
