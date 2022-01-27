@@ -1,0 +1,24 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <img  onmouseover="zoomOn()" onmouseout="zoomOut()" id="img" src="https://rukminim1.flixcart.com/image/150/150/kdt50nk0-0/watch/s/9/4/lcs-8474-lois-caron-original-imafumkrpzbnzyj7.jpeg?q=70">
+        <script>
+            var imageZoom=document.getElementById("img");
+            console.log(imageZoom.width);
+            console.log(imageZoom.height);
+            function zoomOn(){
+                imageZoom.width="150";
+                imageZoom.height="200";
+
+            }
+            function zoomOut(){
+                imageZoom.width="96";
+                imageZoom.height="150";
+
+
+            }
+        </script>
+    </body>
+</html>
