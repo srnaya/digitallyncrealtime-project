@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button id="alert"> Click Here</button>
+        <script>
+            // document.getElementById("alert").onclick=function(){
+            //   alert("Alert1");
+            // }
+            // document.getElementById("alert").onclick=function(){
+            //   alert("Alert 2");
+            // }
+// By this logic we will show only one alert.....
+            document.getElementById("alert").addEventListener("click",function(){
+                alert("alert1");
+            })
+            document.getElementById("alert").addEventListener("click",function(){
+                alert("alert2");
+            })
+        </script>
+    </body>
+</html>
