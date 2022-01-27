@@ -1,0 +1,19 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        AccNo:<input type="text" oncopy="return copy()" onpaste="return paste()" placeholder="AccountNo"><span id="accNo"></span>
+        <script>
+            function copy(){
+                document.getElementById("accNo").innerHTML="You can't copy";
+                return false;
+            }
+            function paste(){
+                document.getElementById("accNo").innerHTML="Youcan't paste here";
+                return false;
+            }
+        </script>
+    </body>
+</html>
+<!-- 4567788 -->
